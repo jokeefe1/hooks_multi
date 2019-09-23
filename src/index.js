@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
-import CounterPage from './pages/CounterPage'
+import LandingPage from './pages/LandingPage'
 import Store from './store/Store'
 
 function App() {
     return (
         <Store>
-            <CounterPage />
+            <LandingPage />
         </Store>
     )
 }
