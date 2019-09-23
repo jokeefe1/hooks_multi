@@ -25,7 +25,8 @@ export default function TodosContext(state, action) {
             })
             return {
                 ...state,
-                todos: [...updatedTodos]
+                todos: [...updatedTodos],
+                selected: {}
             }
         case DELETE_TODO:
             const filteredTodos = state.todos.filter(
