@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import CounterContext from '../contexts/CounterContext'
 
 export default function Counter() {
-    const {state, dispatch } = React.useContext(CounterContext)
+    const {state_count: state, dispatch_count: dispatch} = useContext(CounterContext)
 
     const INCREMENT = 'INCREMENT'
     const DECREMENT = 'DECREMENT'
